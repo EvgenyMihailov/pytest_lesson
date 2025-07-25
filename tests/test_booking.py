@@ -29,4 +29,5 @@ def test_update_booking(get_token, headers, created_booking, booking_client, upd
     headers.update({'Cookie': f'token={get_token}'})
     booking_id = created_booking['bookingid']
     response = booking_client.update_booking(update_booking_payload.build(),headers,booking_id)
+    print()
     print(response.json())
