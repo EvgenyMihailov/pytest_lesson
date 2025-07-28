@@ -1,9 +1,6 @@
-
-
-
 class StringUtils:
     def reverse_string(self, s: str) -> str:
-        if not  isinstance(s, str):
+        if not isinstance(s, str):
             raise TypeError("Должна быть строка")
         return s[::-1]
 
